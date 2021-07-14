@@ -55,10 +55,11 @@
                                     },
                                     apiKey: '417030ed-721d-4908-5626-7a2f8833eb89',
                                     account: {
-                                        id: 12345,
+                                        id: 44444,
                                         city: 'Chapel Hill',
                                         zipCode: '27514'
-                                    }
+                                    },
+                                    excludeAllText: true
                                 });
 
                                 if(queryString.overrideNative === 'on') {
@@ -141,6 +142,7 @@
                 </style>
         </head>
         <body>
+            exclude all text is true
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#">About</a>
@@ -149,7 +151,7 @@
                 <a href="#">Contact</a>
               </div>
             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-            <h2>header header</h2>
+            <h2 class='h2h2h2'>header header</h2>
             <p> fun in the sun </p>
             <a href="coolpage.html">Click here to go to cool page</a>
             <!-- <img src="static/cat.png" height="200" width="300"/> -->
@@ -185,7 +187,7 @@
                 <form>
                     <label for="text">Type stuff here</label>
                     <input type="text" id="text" name="text">
-                    <input type="button" value="Submit">
+                    <input type="button" class="submit-button" value="Submit">
                 </form>
             </div>
 
