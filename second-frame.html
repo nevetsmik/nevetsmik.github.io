@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <body>
+      <button onClick="showMessage()">Click me</button>
+      <div id="hiddenMessage">Hi I'm hidden<div/>
+      <br/>
+      <button>Guide Center</button>
+      <br/>
+      <button >More Than One</button>
+    </body>
+    <script>
+    (function(apiKey){
+        (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+        v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
+            o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+            y=e.createElement(n);y.async=!0;y.src='https://pendo-dev-static.storage.googleapis.com/agent/static/'+apiKey+'/pendo.js';
+            z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+    })('cf0ac230-1b60-431f-6a0c-254f5d2cd665');
+
+    pendo.initialize({
+      visitor: {
+        id: 'testuser@pendo'
+      },
+              disableGuideCenterContentSearch: true,
+      apiKey: 'cf0ac230-1b60-431f-6a0c-254f5d2cd665',
+              account: {
+        id: 12345,
+        city: 'Raleigh',
+        zipCode: '27601'
+      }
+    });
+
+    var hidden = true;
+    function showMessage() {
+        if (hidden){
+            document.getElementById("hiddenMessage").style.display = 'none';
+        } else {
+            document.getElementById("hiddenMessage").style.display = 'block';
+        }
+        hidden = !hidden;
+    }
+    </script>
+</html>
