@@ -33,7 +33,7 @@ export function runSnippet(config, setPendoMetadata) {
           })(v[w]);
         y = e.createElement(n);
         y.async = !0;
-        y.src = 'https://cdn.pendo.io/agent/static/' + apiKey + '/pendo.js';
+        y.src = 'https://pendo-calypso-static.storage.googleapis.com/agent/static/' + apiKey + '/pendo.js';
         z = e.getElementsByTagName(n)[0];
         z.parentNode.insertBefore(y, z);
       })(window, document, 'script', 'pendo');

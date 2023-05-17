@@ -18,7 +18,7 @@ export function determineConfig() {
 
   // If app not defined, return crm config
   if (!configs[app]) {
-    return configs['crm'];
+    return configs['investments'];
   }
   // Else, return config for specified app
   else {
