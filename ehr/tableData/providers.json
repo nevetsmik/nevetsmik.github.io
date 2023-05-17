@@ -1,0 +1,22 @@
+{
+  "schema": {
+    "id": {
+      "label": "ID"
+    },
+    "name": {
+      "label": "Name"
+    },
+    "region": {
+      "label": "Region"
+    }
+  },
+  "rows": [
+    { "id": "0", "name": "Insuricare", "region": "East" },
+    { "id": "1", "name": "Healthyprise", "region": "South" },
+    { "id": "2", "name": "DoctorsInc", "region": "North" },
+    { "id": "3", "name": "Healthcare", "region": "West" },
+    { "id": "4", "name": "Insuriant", "region": "East" },
+    { "id": "5", "name": "RealCare", "region": "South" },
+    { "id": "6", "name": "Touchpoint", "region": "North" }
+  ]
+}

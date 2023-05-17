@@ -1,0 +1,267 @@
+{
+  "schema": {
+    "id": {
+      "label": "ID"
+    },
+    "account": {
+      "label": "Account"
+    },
+    "rep": {
+      "label": "Email"
+    },
+    "amount": {
+      "label": "Amount"
+    },
+    "claim_date": { "label": "Claim Date" }
+  },
+  "rows": [
+    {
+      "id": "0",
+      "account": "Hooli",
+      "rep": "Tom Smith",
+      "amount": "$4,780",
+      "claim_date": "1/27/2023",
+      "zip_code": 70348
+    },
+    {
+      "id": "1",
+      "account": "Medrano Group",
+      "rep": "Amy Jones",
+      "amount": "$5,916",
+      "claim_date": "1/7/2023",
+      "zip_code": 96351
+    },
+    {
+      "id": "2",
+      "account": "Deneb Corp",
+      "rep": "Brad White",
+      "amount": "$4,563",
+      "claim_date": "12/18/2022",
+      "zip_code": 53246
+    },
+    {
+      "id": "3",
+      "account": "Ballard Group",
+      "rep": "James Keller",
+      "amount": "$5,004",
+      "claim_date": "11/28/2022",
+      "zip_code": 54250
+    },
+    {
+      "id": "4",
+      "account": "Mendoza-Shelton",
+      "rep": "Enrique Lopez",
+      "amount": "$1,445",
+      "claim_date": "11/8/2022",
+      "zip_code": 45214
+    },
+    {
+      "id": "5",
+      "account": "Rex Kwan Do",
+      "rep": "Mohammed Kumar",
+      "amount": "$2,812",
+      "claim_date": "10/19/2022",
+      "zip_code": 82221
+    },
+    {
+      "id": "6",
+      "account": "Cross Inc",
+      "rep": "Julian George",
+      "amount": "$2,184",
+      "claim_date": "9/29/2022",
+      "zip_code": 14228
+    },
+    {
+      "id": "7",
+      "account": "Waynes World",
+      "rep": "Itai West",
+      "amount": "$5,880",
+      "claim_date": "9/9/2022",
+      "zip_code": 80258
+    },
+    {
+      "id": "8",
+      "account": "Murillo-Houston",
+      "rep": "Juan Diego",
+      "amount": "$3,446",
+      "claim_date": "8/20/2022",
+      "zip_code": 46234
+    },
+    {
+      "id": "9",
+      "account": "Stewart-Hood",
+      "rep": "Kelsey Thompson",
+      "amount": "$6,897",
+      "claim_date": "7/31/2022",
+      "zip_code": 87269
+    },
+    {
+      "id": "10",
+      "account": "Sphere Co",
+      "rep": "Tom Smith",
+      "amount": "$1,951",
+      "claim_date": "7/11/2022",
+      "zip_code": 91215
+    },
+    {
+      "id": "11",
+      "account": "Prestige Worldwide",
+      "rep": "Amy Jones",
+      "amount": "$6,482",
+      "claim_date": "6/21/2022",
+      "zip_code": 42268
+    },
+    {
+      "id": "12",
+      "account": "Mendoza-Shelton",
+      "rep": "Brad White",
+      "amount": "$1,811",
+      "claim_date": "6/1/2022",
+      "zip_code": 81211
+    },
+    {
+      "id": "13",
+      "account": "BlackBox Inc",
+      "rep": "James Keller",
+      "amount": "$6,435",
+      "claim_date": "5/12/2022",
+      "zip_code": 45263
+    },
+    {
+      "id": "14",
+      "account": "Dejesus and Sons",
+      "rep": "Enrique Lopez",
+      "amount": "$3,544",
+      "claim_date": "4/22/2022",
+      "zip_code": 54234
+    },
+    {
+      "id": "15",
+      "account": "Owens-Norman",
+      "rep": "Mohammed Kumar",
+      "amount": "$1,273",
+      "claim_date": "4/2/2022",
+      "zip_code": 23217
+    },
+    {
+      "id": "16",
+      "account": "Sphere Co",
+      "rep": "Julian George",
+      "amount": "$1,833",
+      "claim_date": "3/13/2022",
+      "zip_code": 83213
+    },
+    {
+      "id": "17",
+      "account": "TakeOff",
+      "rep": "Itai West",
+      "amount": "$1,730",
+      "claim_date": "2/21/2022",
+      "zip_code": 70213
+    },
+    {
+      "id": "18",
+      "account": "LightSpeed",
+      "rep": "Juan Diego",
+      "amount": "$1,629",
+      "claim_date": "2/1/2022",
+      "zip_code": 69212
+    },
+    {
+      "id": "19",
+      "account": "Collins Inc",
+      "rep": "Kelsey Thompson",
+      "amount": "$5,112",
+      "claim_date": "1/12/2022",
+      "zip_code": 12251
+    },
+    {
+      "id": "20",
+      "account": "Bushwood",
+      "rep": "Tom Smith",
+      "amount": "$4,531",
+      "claim_date": "12/23/2021",
+      "zip_code": 51143
+    },
+    {
+      "id": "21",
+      "account": "Oceanic",
+      "rep": "Amy Jones",
+      "amount": "$6,471",
+      "claim_date": "12/3/2021",
+      "zip_code": 41167
+    },
+    {
+      "id": "22",
+      "account": "Innovation Arch",
+      "rep": "Brad White",
+      "amount": "$5,254",
+      "claim_date": "11/13/2021",
+      "zip_code": 24155
+    },
+    {
+      "id": "23",
+      "account": "Costa and Sons",
+      "rep": "James Keller",
+      "amount": "$2,733",
+      "claim_date": "10/24/2021",
+      "zip_code": 73123
+    },
+    {
+      "id": "24",
+      "account": "Oscorp",
+      "rep": "Enrique Lopez",
+      "amount": "$6,321",
+      "claim_date": "10/4/2021",
+      "zip_code": 31162
+    },
+    {
+      "id": "25",
+      "account": "Hunter and Sons",
+      "rep": "Mohammed Kumar",
+      "amount": "$3,335",
+      "claim_date": "9/14/2021",
+      "zip_code": 35133
+    },
+    {
+      "id": "26",
+      "account": "Burnham and Root",
+      "rep": "Julian George",
+      "amount": "$3,873",
+      "claim_date": "8/25/2021",
+      "zip_code": 83137
+    },
+    {
+      "id": "27",
+      "account": "Rex Kwan Do",
+      "rep": "Itai West",
+      "amount": "$2,537",
+      "claim_date": "8/5/2021",
+      "zip_code": 57123
+    },
+    {
+      "id": "28",
+      "account": "Mclean Inc",
+      "rep": "Juan Diego",
+      "amount": "$6,796",
+      "claim_date": "7/16/2021",
+      "zip_code": 76169
+    },
+    {
+      "id": "29",
+      "account": "Jaramillo-Ross",
+      "rep": "Tom Smith",
+      "amount": "$3,339",
+      "claim_date": "6/26/2021",
+      "zip_code": 39133
+    },
+    {
+      "id": "30",
+      "account": "Zamora Inc",
+      "rep": "Amy Jones",
+      "amount": "$5,342",
+      "claim_date": "6/6/2021",
+      "zip_code": 32154
+    }
+  ]
+}
