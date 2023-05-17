@@ -51,7 +51,7 @@ export default {
   favicon: '/investments/logos/main.ico',
   pendoConfig: {
     name: 'investments',
-    apiKey: 'c18eec5b-da0f-4d99-7702-a5ff6a015c99',
+    apiKey: 'bcbeab11-297c-401a-7bc0-a11d99d65d40',
     additionalApiKeys: [],
   },
   background: {
