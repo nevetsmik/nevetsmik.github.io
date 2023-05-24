@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en">
     <head>
-        <meta charset=utf-8>
-        <meta http-equiv=x-ua-compatible content="ie=edge">
-        <meta name=viewport content="width=device-width,initial-scale=1">
-        <title>calypso-extension-app</title> 
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>calypso</title>
         <style>
             .on-your-right {
                 position: absolute;
@@ -15,104 +15,150 @@
                 display: none;
             }
 
-            input[type=button], input[type=reset], input[type=submit], button {
+            input[type='button'],
+            input[type='reset'],
+            input[type='submit'],
+            button {
                 min-width: 6em;
             }
-        </style>   
+            #add-iframe-button {
+            }
+            #remove-iframe-div {
+                margin-left: 10px;
+            }
+        </style>
     </head>
     <body>
         <h1>Welcome</h1>
         <br />
-        <iframe src="/second-frame.html"></iframe>
-        <button class="test-button">Test Button</button>
-        <br/>
+        <div id="steve">steve</div>
+        <iframe src="./second-frame.html"></iframe>
+        <iframe width="400" height="400" src="https://pendo-io.github.io"></iframe>
+        <div id="iframe-buttons">
+            <button id="add-iframe-button">Add QE website iframe</button>
+            <button id="remove-iframe-button">Remove first iframe</button>
+        </div>
+        <br />
         <div>
             <div class="on-your-right">On your right</div>
         </div>
         <p><a href="hello_world.html" class="click-me">Click Me!</a></p>
         <div><a href="big-feature.html" class="big-feature">Big Feature</a></div>
-        <br/>
+        <br />
         <div>
-        <button class="toggle hide-message" onClick="showMessage()">Toggle</button>
-        <br/>
-        <div id="toggleMessage">I can be toggled</div>
-        <br/>
-        <button>Hi xanderyst@pendo.io, please give me a call at 555-555-5555</button>
-        <br/>
-        <a>This is your public IP address: 204.16.137.218</a>
-        <br/>
-        <div>TEAM 123-45-6789</div>
-        <br/>
-        <div>
-            <button>Use this to buy swag: 4111 1111 1111 1111</button>
+            <button class="toggle hide-message" onClick="showMessage()">Toggle</button>
+            <br />
+            <div id="toggleMessage">I can be toggled</div>
+            <br />
+            <button>Hi xanderyst@pendo.io, please give me a call at 555-555-5555</button>
+            <br />
+            <a>This is your public IP address: 204.16.137.218</a>
+            <br />
+            <div>TEAM 123-45-6789</div>
+            <br />
+            <div>
+                <button>Use this to buy swag: 4111 1111 1111 1111</button>
+            </div>
+            <div>
+                <button>Use this to buy swag: 4111 1111 1111 1111</button>
+            </div>
+            <br />
+            <button class="sc-cJSrbW ddNJQR hasItems showLabel">Bad Class Button</button>
         </div>
-        <div>
-            <button>Use this to buy swag: 4111 1111 1111 1111</button>
-        </div>
-        <br/>
-        <button class="sc-cJSrbW ddNJQR hasItems showLabel">Bad Class Button</button>
-        </div>
-        <br/>
+        <br />
         <button class="more-than-one">More Than One</button>
-        <br/>
+        <br />
         <fieldset>
             <label style="display: inline-block">
-                <input type="radio"><b>Stable</b>
+                <input type="radio" /><b>Stable</b>
                 <div>Recommended</div>
             </label>
         </fieldset>
-        <div style="max-height: 400px; overflow:hidden">
-            <div style="max-height: 400px; overflow:hidden; overflow-y: auto">
+        <div style="max-height: 400px; overflow: hidden">
+            <div style="max-height: 400px; overflow: hidden; overflow-y: auto">
                 <div style="height: 1500px">force content to scroll</div>
                 <button id="targetme" type="button">Target a guide at me, please</button>
             </div>
         </div>
         <script>
-            // (function(apiKey) {
-            //     (function (p,e,n,d,o) {
-            //         var v, w, x, y, z;
-            //         o = p[d] = p[d] || {}; // p is window, d is pendo, o is a reference
-            //         o._q = []; // _q
-            //         v = ['initialize', 'identify', 'updateOptions', 'pageLoad'];
-            //         for (w = 0, x = v.length; w < x; ++w)
-            //             (function (m) {
-            //                 o[m] = o[m] || function() {
-            //                     o._q[m === v[0] ? 'unshift' : 'push']([m].concat([].slice.call(arguments,0)));
-            //                 };
-            //             })(v[w]); // pendo = { _q: [], initialize: () => {}, identify: () => {}, updateOptions: () => {}, pageLoad: () => {} }, where each function is function() { o._q[m === v[0] ? 'unshift' : 'push']([m].concat([].slice.call(arguments,0))); };
-            //         y = e.createElement(n); // create a 'script' tag on the document
-            //         y.async = !0; // make the script take async
-            //         y.src = 'https://pendo-dev-static.storage.googleapis.com/agent/static/'+apiKey+'/pendo.js'; // execute the script
-            //         z = e.getElementsByTagName(n)[0]; // get the first script tag
-            //         z.parentNode.insertBefore(y, z); // insert the pendo.js script (y) as the first script
-            //     })(window, document, 'script', 'pendo');
-            // })('cf0ac230-1b60-431f-6a0c-254f5d2cd665');
-            // console.warn('calling pendo.initialize');
-            // // When pendo.initialize is called, pendo._q looks like [ ['initialize', { arguments passed to pendo.initialize }] ]
-            // window.addEventListener('load', () => {
-            //     console.warn('window.pendo._q', window.pendo._q[0]);
-            // })
-            // pendo.initialize({
-            //     visitor: {
-            //         id: 'steve.kim@pendo.io',
-            //         user_id: 1
-            //     },
-            //     apiKey: 'cf0ac230-1b60-431f-6a0c-254f5d2cd665',
-            //     account: {
-            //         id: 12345,
-            //         city: 'Chapel Hill',
-            //         zipCode: '27514'
-            //     }
-            // });
-            var hidden = true;
+            const urlParams = new URLSearchParams(window.location.search);
+            const isAgent = Boolean(urlParams.get('agent'));
+
+            const useQeWebsiteApiKey = Boolean(urlParams.get('useqewebsite'));
+            const webAppApiKey = useQeWebsiteApiKey
+                ? 'b367a465-a3ef-4348-473e-73e7c06ac82a'
+                : '95d8a8e7-7a9e-4040-563e-d99c7df57894';
+
+            if (isAgent) {
+                (function (apiKey) {
+                    (function (p, e, n, d, o) {
+                        var v, w, x, y, z;
+                        o = p[d] = p[d] || {}; // p is window, d is pendo, o is a reference
+                        o._q = []; // _q
+                        v = ['initialize', 'identify', 'updateOptions', 'pageLoad'];
+                        for (w = 0, x = v.length; w < x; ++w)
+                            (function (m) {
+                                o[m] =
+                                    o[m] ||
+                                    function () {
+                                        o._q[m === v[0] ? 'unshift' : 'push']([m].concat([].slice.call(arguments, 0)));
+                                    };
+                            })(v[w]); // pendo = { _q: [], initialize: () => {}, identify: () => {}, updateOptions: () => {}, pageLoad: () => {} }, where each function is function() { o._q[m === v[0] ? 'unshift' : 'push']([m].concat([].slice.call(arguments,0))); };
+                        y = e.createElement(n); // create a 'script' tag on the document
+                        y.async = !0; // make the script take async
+                        y.src =
+                            'https://pendo-calypso-static.storage.googleapis.com/agent/static/' + apiKey + '/pendo.js'; // execute the script
+                        z = e.getElementsByTagName(n)[0]; // get the first script tag
+                        z.parentNode.insertBefore(y, z); // insert the pendo.js script (y) as the first script
+                    })(window, document, 'script', 'pendo');
+                })(webAppApiKey);
+                console.warn('calling pendo.initialize');
+                // When pendo.initialize is called, pendo._q looks like [ ['initialize', { arguments passed to pendo.initialize }] ]
+                window.addEventListener('load', () => {
+                    console.warn('window.pendo._q', window.pendo._q[0]);
+                });
+                pendo.initialize({
+                    visitor: {
+                        id: 'steve.kim@pendo.io',
+                        user_id: 1
+                    },
+                    apiKey: webAppApiKey,
+                    account: {
+                        id: 12345,
+                        city: 'Chapel Hill',
+                        zipCode: '27514'
+                    }
+                });
+                var hidden = true;
+            }
             function showMessage() {
-                if (hidden){
-                    document.getElementById("toggleMessage").style.display = 'inline-block';
+                if (hidden) {
+                    document.getElementById('toggleMessage').style.display = 'inline-block';
                 } else {
-                    document.getElementById("toggleMessage").style.display = 'none';
+                    document.getElementById('toggleMessage').style.display = 'none';
                 }
                 hidden = !hidden;
             }
+            const addiFrameButton = document.getElementById('add-iframe-button');
+            const removeiFrameButton = document.getElementById('remove-iframe-button');
+
+            addiFrameButton.addEventListener('click', () => {
+                const iframe = document.createElement('iframe');
+                iframe.width = '400px';
+                iframe.height = '300px';
+                iframe.src = 'https://pendo-io.github.io';
+                iframe.scrolling = 'yes';
+
+                const iframeButtons = document.getElementById('iframe-buttons');
+                iframeButtons.after(iframe);
+            });
+
+            removeiFrameButton.addEventListener('click', () => {
+                const firstIframe = Array.from(document.getElementsByTagName('iframe')).find(
+                    (frame) => frame.src === 'https://pendo-io.github.io/'
+                );
+                firstIframe.remove();
+            });
         </script>
     </body>
 </html>
